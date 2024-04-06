@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<style>
+    body{
+        margin: 0;
+        background-color: #CCCCCC;
+        height: 300vw;
+    }
+    .icon{
+        width: calc(0.069vw * 123);
+        position: absolute;
+        left: calc(0.069vw * 23);
+        top: calc(0.069vw * 28);
+        z-index: 4;
+    }
+    .bg{
+        background-image: url('resource/main-container@2x.png');
+        background-size:100vw 31vw;
+        width: 100vw;
+        height: calc(0.069vw * 446);
+        border-bottom-left-radius: 1.5vw;
+        border-bottom-right-radius: 1.5vw;
+        box-shadow: 0 calc(0.069vw * 8) calc(0.069vw * 4) 0 rgba(128, 128, 128,0.7);
+    }
+    .menu{
+        top: calc(0.069vw * 28);
+        position: relative;
+        width: 38.31vw;
+        height: 3.46vw;
+        border-radius: 4vw;
+        left: 25.4vw;
+        padding: 0%;
+        background-color: #F3F3F3;
+    }
+    .menu nav ul{
+        list-style: none;
+        display: flex;
+        justify-content:space-evenly;
+
+    }
+    .menu nav ul li a{
+        text-decoration: none;
+        font-size: calc(0.069vw * 14);
+        font-family: 'roboto Mono';
+        padding: 1.06vw;
+        padding-left: 2.4vw;
+        padding-right: 2.4vw;
+        border-radius: 1.5vw;
+        color: #000000;
+        display: flex;
+    }
+    .menu nav ul li a:hover{
+        background-color: #5783DB;
+    }
+    .contact{
+        font-family: 'roboto Mono';
+        position: absolute;
+        float: right;
+        padding: 1.1vw;
+        padding-left: 2.96vw;
+        padding-right: 2.51vw;
+        border-radius: 1.5vw;
+        background-color: #5783DB;
+        right: calc(0.069vw * 28);
+        top: calc(0.069vw * 28);
+        
+    }
+    .pencarian{
+        display: flex;
+        width: calc(0.069vw * 569);
+        height: calc(0.069vw * 58);
+        position: absolute;
+        top: calc(0.069vw * 355);
+        left: calc(0.069vw * 375);
+        background-color: #F3F3F3;
+        border: 0.1vw solid #5783DB;
+        border-radius: 1.5vw;
+        box-shadow: 0 calc(0.069vw * 8) calc(0.069vw * 4) 0 rgba(128, 128, 128,0.4);
+
+    }
+    .input-pencarian{
+        font-family: 'roboto Mono';
+        border: none;
+        background-color: hsla(270, 50%, 40%,0);
+        width: calc(0.069vw * 490);
+        outline: none;
+        position: relative;
+        height: 3vw;
+        align-self: center;
+        font-size: calc(0.069vw * 14);
+        color: gray;
+
+    }
+    .pencarian img{
+        margin-top: 0.45vw;
+        margin-left: 1vw;
+        width: 3.45vw;
+        height: 3.45vw;
+    }
+</style>
+<body>
+<div class="bg">
+    <img class="icon" src="resource/image-24removebgpreview-1@2x.png" alt="">
+    <div class="contact"><a href="hubungi.html" style="text-decoration: none;color: #F3F3F3;">Hubungi</a></div>
+    <div class="menu" style="padding: 0%;margin: 0%;">
+        <nav  style="padding: 0%;margin: 0%;">
+            <ul  style="padding: 0%;margin: 0%;">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="rekomendasi.html">Rekomendasi</a></li>
+                <li><a style="background-color: #5783DB;" href="trending.html">Trending</a></li>
+                <li><a href="bantuan.html">Bantuan</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="pencarian">
+        <img src="resource/search-icon.png" alt="">
+        <input type="text" class="input-pencarian" placeholder="Selamat Datang,silakan temukan yang anda minati!">
+    </div>
+</div>
+    <div class="grid">
+        <div class="content">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="resource/ifo-5@2x.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Menemukan Cita Rasa dalam Kehidupan Sehari-hari</h5>
+                  <p class="card-text">Kreativitas bukanlah milik segelintir orang yang berbakat, tetapi lebih merupakan proses yang dapat dipelajari dan dikembangkan oleh siapa pun. </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</body>
+<script>
+ var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var data = JSON.parse(xhr.responseText);
+                console.log(data); // Output data JSON ke konsol
+                // Lakukan sesuatu dengan data JSON, seperti menampilkan di halaman web
+                document.getElementById("result").innerText = JSON.stringify(data, null, 2);
+            }
+        };
+        xhr.open("GET", "content.json", true); // Ubah "data.json" sesuai dengan nama file JSON Anda
+        xhr.send();
+
+</script>
+</html>
